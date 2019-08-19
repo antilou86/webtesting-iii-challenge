@@ -15,7 +15,7 @@ describe('<Controls/>', () => {
     })
     it("should open the gate on click", () => {
         const { getByText } = render(<Dashboard />);
-        const open = getByText(/Close Gate/);
+        const open = getByText(/Close Gate/i);
         fireEvent.click(open);
       });
     it("should close gate", () => {
